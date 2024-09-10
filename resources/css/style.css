@@ -83,7 +83,32 @@ header .mobile {
   display: none;
 }
 
+header .desktop .button {
+  display: none;
+}
+
 @media only screen and (max-width: 760px) {
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  header .mobile li {
+    padding: 0;
+  }
+
+  header .desktop .button {
+    display: inline-block;
+    padding: .1875rem .5rem;
+    background-color: #9dc20b;
+    line-height: 1.6;
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 450px) {
   header .desktop {
     display: none;
   }
@@ -270,13 +295,19 @@ header .mobile {
 
 @media only screen and (max-width: 760px) {
   #features-section {
-    flex-flow: column;
+    flex-flow: row;
     padding: 0;
   }
 
   .feature {
     margin: 0;
+    width: 45%;
     padding: 1.25rem 1rem 0 1rem;
+  }
+
+  .feature .image-container {
+    height: 100%;
+    width: 80%;
   }
 }
 
