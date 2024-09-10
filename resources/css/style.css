@@ -365,6 +365,16 @@ header .desktop .button {
     margin-bottom: 1rem;
   }
 
+  #filters-section .images-container {
+    padding: 0;
+  }
+
+  #filters-section .extra {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
   #filters-section .content h2 {
     padding-bottom: .625rem;
     font-size: 1.125rem;
@@ -377,13 +387,6 @@ header .desktop .button {
     line-height: 1.4;
   }
 
-  #filters-section .images-container {
-    padding: 0;
-  }
-
-  #filters-section .extra {
-    display: none;
-  }
 }
 
 /* Quotes Section */
@@ -435,6 +438,15 @@ header .desktop .button {
   }
 }
 
+@media only screen and (max-width: 760px) {
+  #quotes-section .quote {
+    padding: 0;
+  }
+
+  #quotes-section .content {
+    padding: 1.875rem 0; 
+  }
+}
 /* Footer */
 
 footer {
